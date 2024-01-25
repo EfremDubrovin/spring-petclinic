@@ -25,6 +25,12 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
+import org.springframework.samples.petclinic.controller.PetController;
+import org.springframework.samples.petclinic.domain.owner.Owner;
+import org.springframework.samples.petclinic.domain.owner.Pet;
+import org.springframework.samples.petclinic.domain.owner.PetType;
+import org.springframework.samples.petclinic.domain.owner.PetTypeFormatter;
+import org.springframework.samples.petclinic.persistence.OwnerRepository;
 import org.springframework.test.context.aot.DisabledInAotMode;
 import org.springframework.test.web.servlet.MockMvc;
 

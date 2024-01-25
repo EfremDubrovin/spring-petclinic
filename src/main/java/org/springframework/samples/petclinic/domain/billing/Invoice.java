@@ -1,13 +1,9 @@
-package org.springframework.samples.petclinic.billing;
+package org.springframework.samples.petclinic.domain.billing;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import org.springframework.samples.petclinic.model.BaseEntity;
-import org.springframework.samples.petclinic.owner.Visit;
+import org.springframework.samples.petclinic.domain.base.BaseEntity;
 
 /**
  * Represents a bill for a particular visit

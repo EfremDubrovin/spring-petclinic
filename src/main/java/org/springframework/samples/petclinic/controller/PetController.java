@@ -13,11 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.owner;
+package org.springframework.samples.petclinic.controller;
 
 import java.time.LocalDate;
 import java.util.Collection;
 
+import org.springframework.samples.petclinic.domain.owner.Owner;
+import org.springframework.samples.petclinic.domain.owner.Pet;
+import org.springframework.samples.petclinic.domain.owner.PetType;
+import org.springframework.samples.petclinic.domain.owner.PetValidator;
+import org.springframework.samples.petclinic.persistence.OwnerRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
@@ -39,7 +44,7 @@ import jakarta.validation.Valid;
  */
 @Controller
 @RequestMapping("/owners/{ownerId}")
-class PetController {
+public class PetController {
 
 	private static final String VIEWS_PETS_CREATE_OR_UPDATE_FORM = "pets/createOrUpdatePetForm";
 

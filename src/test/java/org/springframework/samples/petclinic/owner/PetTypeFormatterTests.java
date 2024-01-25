@@ -32,6 +32,9 @@ import org.junit.jupiter.api.condition.DisabledInNativeImage;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.samples.petclinic.domain.owner.PetType;
+import org.springframework.samples.petclinic.domain.owner.PetTypeFormatter;
+import org.springframework.samples.petclinic.persistence.OwnerRepository;
 
 /**
  * Test class for {@link PetTypeFormatter}

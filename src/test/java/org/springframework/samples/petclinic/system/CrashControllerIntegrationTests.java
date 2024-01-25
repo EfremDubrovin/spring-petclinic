@@ -38,6 +38,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.samples.petclinic.controller.CrashController;
 
 /**
  * Integration Test for {@link CrashController}.

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.owner;
+package org.springframework.samples.petclinic.domain.owner;
 
 import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
@@ -21,8 +21,8 @@ import jakarta.persistence.OneToOne;
 import java.time.LocalDate;
 
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.samples.petclinic.billing.Invoice;
-import org.springframework.samples.petclinic.model.BaseEntity;
+import org.springframework.samples.petclinic.domain.base.BaseEntity;
+import org.springframework.samples.petclinic.domain.billing.Invoice;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
