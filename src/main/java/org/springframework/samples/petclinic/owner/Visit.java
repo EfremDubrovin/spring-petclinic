@@ -15,9 +15,13 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import java.time.LocalDate;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.samples.petclinic.billing.Invoice;
 import org.springframework.samples.petclinic.model.BaseEntity;
 
 import jakarta.persistence.Column;
@@ -42,6 +46,10 @@ public class Visit extends BaseEntity {
 	@NotBlank
 	private String description;
 
+	@OneToOne(optional = false, fetch = FetchType.EAGER)
+	@JoinColumn(name = "invoice_id")
+	private Invoice invoice;
+
 	/**
 	 * Creates a new instance of Visit for the current date
 	 */
@@ -63,6 +71,10 @@ public class Visit extends BaseEntity {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public void setInvoice(Invoice invoice) {
+		this.invoice = invoice;
 	}
 
 }
